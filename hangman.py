@@ -3,6 +3,8 @@ import string
 
 from words import words
 
+score = 0
+
 def choice_word(words):
     word = random.choice(words)
     return word
@@ -19,6 +21,9 @@ def again():
         exit()
 
 def hangman():
+
+    global score
+
     original_word = choice_word(words)
     word = original_word.upper()
 
@@ -50,6 +55,8 @@ def hangman():
         again()
     else:
         print("Le mot a deviné est", word, "vous avez gagné")
+        score += 10
+        print("Votre score est:", score)
         again()
 
 hangman()
