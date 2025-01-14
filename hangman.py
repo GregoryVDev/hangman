@@ -5,4 +5,12 @@ def choice_word(words):
     word = random.choice(words)
     return word
 
-print(choice_word(words))
+def hangman():
+    original_word = choice_word(words)
+    word = original_word.upper()
+
+    letter = set(word)
+
+    print(letter)
+
+hangman()
