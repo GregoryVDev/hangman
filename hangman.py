@@ -4,6 +4,7 @@ import string
 from words import words
 
 score = 0
+player = ""
 
 def choice_word(words):
     word = random.choice(words)
@@ -31,7 +32,7 @@ def name():
 
 def hangman():
 
-    player = ""
+    global player
     if player == "":
        player = name()
 
