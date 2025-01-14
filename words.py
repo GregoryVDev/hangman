@@ -1,1 +1,1 @@
-words = ["Etoile", "Chocolat", "Ordinateur", "Foret", "Aventure", "Whisky", "Python", "Chien","Lune", "Jeu", "Automne","Sourir", "Voyage", "Perdre","Mysterieux","Devinette","Parapluie","Horizon","Amis","Amour"]
+words = ["Etoile", "Chocolat", "Ordinateur", "Foret", "Aventure", "Whisky", "Python", "Chien","Lune", "Jeu", "Automne","Sourire", "Voyage", "Perdre","Mysterieux","Devinette","Parapluie","Horizon","Amis","Amour"]
