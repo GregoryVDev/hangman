@@ -20,7 +20,20 @@ def again():
         print("A bientôt")
         exit()
 
+def name():
+    player = input("Merci de saisir votre nom:")
+    player = player.capitalize()
+    if not player.isalpha() or len(player) < 3:
+        print("Le nom que vous avez saisi est invalide")
+        return name()
+    else:
+        return player
+
 def hangman():
+
+    player = ""
+    if player == "":
+       player = name()
 
     global score
 
@@ -51,10 +64,10 @@ def hangman():
         else:
             print("Votre choix est invalide, merci de saisir une lettre")
     if essai == 0:
-        print("Vous avez perdu le mot était", word)
+        print(player, ",vous avez perdu le mot était", word)
         again()
     else:
-        print("Le mot a deviné est", word, "vous avez gagné")
+        print(player, ",le mot à deviné est", word, "vous avez gagné")
         score += 10
         print("Votre score est:", score)
         again()
