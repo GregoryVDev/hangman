@@ -47,8 +47,9 @@ def hangman():
             print("Votre choix est invalide, merci de saisir une lettre")
     if essai == 0:
         print("Vous avez perdu le mot était", word)
+        again()
     else:
         print("Le mot a deviné est", word, "vous avez gagné")
-
+        again()
 
 hangman()
