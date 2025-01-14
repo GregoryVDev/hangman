@@ -7,6 +7,17 @@ def choice_word(words):
     word = random.choice(words)
     return word
 
+def again():
+    replay = input("Souhaitez-vous continuer à jouer? (O = Oui, N = Non)")
+    # Tant que les 4 lettres n'ont pas été tapé, on va afficher de nouveau ce message
+    while replay not in {"O", "o", "N","n"}:
+        replay = input("Souhaitez-vous continuer à jouer? (O = Oui, N = Non)")
+    if replay == "O" or replay == "o":
+        hangman()
+    elif replay == "N" or replay == "n":
+        print("A bientôt")
+        exit()
+
 def hangman():
     original_word = choice_word(words)
     word = original_word.upper()
